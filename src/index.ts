@@ -1,14 +1,20 @@
-import Cabeçalho from '&/componentes/cabecalho'
-
 document.addEventListener(`DOMContentLoaded`, () => {
-  const cabeçalho = new Cabeçalho({
-    título: `teste`,
+  const elementoTítulo = document.querySelector(`h1`)!
+
+  const entradaTítulo = document.querySelector<HTMLInputElement>(`[name=título]`)!
+  const entradaSubtítulo = document.querySelector<HTMLInputElement>(`[name=subtítulo]`)!
+
+  entradaTítulo.addEventListener(`keyup`, () => {
+    elementoTítulo.innerHTML = `
+      ${entradaTítulo.value}
+      <small>${entradaSubtítulo.value}<small>
+    `
   })
 
-  const cabeçalho1 = new Cabeçalho({
-    id: `cabeçalho-1`,
-    título: `outro título`,
+  entradaSubtítulo.addEventListener(`keyup`, () => {
+    elementoTítulo.innerHTML = `
+      ${entradaTítulo.value}
+      <small>${entradaSubtítulo.value}<small>
+    `
   })
-
-  setTimeout(() => cabeçalho.definirTítulo(`título`), 2 * 1000)
 })

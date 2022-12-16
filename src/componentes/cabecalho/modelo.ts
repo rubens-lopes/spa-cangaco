@@ -1,3 +1,3 @@
 export default class ModeloCabeçalho {
-  constructor(public título: string) { }
+  constructor(public título: string, public subtítulo: string) { }
 }
