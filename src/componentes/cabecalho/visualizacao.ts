@@ -4,7 +4,10 @@ import ModeloCabeçalho from './modelo'
 export default class VisualizaçãoCabeçalho extends Visualização<ModeloCabeçalho> {
   protected obterVisualização(modelo: ModeloCabeçalho): string {
     return `
-      <h1>${modelo.título}${modelo.subtítulo}</h1>
+      <h1>
+        ${modelo.título}
+        <small>${modelo.subtítulo}</small>
+      </h1>
     `
   }
 }

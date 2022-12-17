@@ -8,6 +8,10 @@ export default class Cabeçalho extends Componente<VisualizaçãoCabeçalho, Mod
     super(new VisualizaçãoCabeçalho(`[data-cabeçalho="${id ?? ``}"]`), new ModeloCabeçalho(título, subtítulo), `título`, `subtítulo`)
   }
 
+  definirSubtítulo(subtítulo: string) {
+    this.modelo.subtítulo = subtítulo
+  }
+
   definirTítulo(título: string) {
     this.modelo.título = título
   }

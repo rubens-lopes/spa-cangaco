@@ -1,4 +1,4 @@
-export default abstract class Visualização<TModelo> {
+export default abstract class Visualização<TModelo = unknown> {
   protected elemento: HTMLElement | null = null
 
   constructor(private readonly seletor: string) {}
