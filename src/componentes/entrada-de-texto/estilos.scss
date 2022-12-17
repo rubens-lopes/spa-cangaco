@@ -1,0 +1,17 @@
+[data-entrada-de-texto] {
+  padding: 8px 0;
+
+  .label {
+    display: inline-block;
+    min-width: 14ch;
+    text-align: right;
+    color: darkslateblue;
+    font-weight: bold;
+  }
+
+  input {
+    border-radius: 12px;
+    border: 1px solid gray;
+    padding: 4px 12px;
+  }
+}

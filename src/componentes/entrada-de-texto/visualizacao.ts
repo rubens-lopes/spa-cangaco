@@ -5,7 +5,7 @@ export default class VisualizaçãoEntradaDeTexto extends Visualização<ModeloE
   protected obterVisualização({ nome }: ModeloEntradaDeTexto) {
     return `
       <label>
-        ${nome}
+        <div class="label">${nome}</div>
         <input type="text">
       <label>
     `

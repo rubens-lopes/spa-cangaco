@@ -1,0 +1,18 @@
+[data-cabeçalho] {
+  text-align: center;
+  
+  h1 {
+    font-weight: normal;
+  }
+  
+  small {
+    display: block;
+    font-size: 1rem;
+    font-weight: lighter;
+    min-height: 22px;
+  }
+
+  .label {
+    color: cadetblue;
+  }
+}

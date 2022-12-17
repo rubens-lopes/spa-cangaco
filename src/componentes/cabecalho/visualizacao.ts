@@ -6,7 +6,7 @@ export default class VisualizaçãoCabeçalho extends Visualização<ModeloCabe�
     return `
       <h1>
         ${modelo.título}
-        <small>${modelo.subtítulo}</small>
+        <small class="label">${modelo.subtítulo}</small>
       </h1>
     `
   }

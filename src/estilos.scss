@@ -1,0 +1,22 @@
+html {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  height: fit-content;
+  margin-top: -50%;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}

@@ -1,8 +1,7 @@
 document.addEventListener(`DOMContentLoaded`, () => {
   const elementoTítulo = document.querySelector(`h1`)!
 
-  const entradaTítulo = document.querySelector<HTMLInputElement>(`[name=título]`)!
-  const entradaSubtítulo = document.querySelector<HTMLInputElement>(`[name=subtítulo]`)!
+import './estilos.scss'
 
   entradaTítulo.addEventListener(`keyup`, () => {
     elementoTítulo.innerHTML = `

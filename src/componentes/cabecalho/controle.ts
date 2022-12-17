@@ -1,6 +1,7 @@
 import { Componente } from '&/componentes/componente'
 import VisualizaçãoCabeçalho from './visualizacao'
 import ModeloCabeçalho from './modelo'
+import './estilos.scss'
 
 export default class Cabeçalho extends Componente<VisualizaçãoCabeçalho, ModeloCabeçalho> {
   

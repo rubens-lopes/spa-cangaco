@@ -1,6 +1,7 @@
 import { Componente, ParâmetrosClicoDeVida } from '&/componentes/componente'
 import ModeloEntradaDeTexto, { type ParâmetrosModeloEntradaDeTexto } from './modelo'
 import VisualizaçãoEntradaDeTexto from './visualizacao'
+import './estilos.scss'
 
 export default class EntradaDeTexto extends Componente<VisualizaçãoEntradaDeTexto, ModeloEntradaDeTexto> {
   constructor({ id, nome, aoDigitar }: IdComponente & ParâmetrosModeloEntradaDeTexto) {
