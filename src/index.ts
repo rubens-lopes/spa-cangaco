@@ -1,22 +1,7 @@
+import FormulárioCabeçalho from './componentes/formulario-cabecalho/controle'
 import './estilos.scss'
 
 document.addEventListener(`DOMContentLoaded`, () => {
-  const elementoTítulo = document.querySelector(`h1`)!
-
-  const entradaTítulo = document.querySelector<HTMLInputElement>(`[name="título"]`)!
-  const entradaSubtítulo = document.querySelector<HTMLInputElement>(`[name="subtítulo"]`)!
-  
-  entradaTítulo.addEventListener(`keyup`, () => {
-    elementoTítulo.innerHTML = `
-      ${entradaTítulo.value}
-      <small>${entradaSubtítulo.value}<small>
-    `
-  })
-
-  entradaSubtítulo.addEventListener(`keyup`, () => {
-    elementoTítulo.innerHTML = `
-      ${entradaTítulo.value}
-      <small>${entradaSubtítulo.value}<small>
-    `
-  })
+  new FormulárioCabeçalho({ id: 1, título: `Olá`, subtítulo: `Mundo` })
+  new FormulárioCabeçalho({ id: 2, título: `Olá`, subtítulo: `Matheus` })
 })
